@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fingertip Detection and Capture</title>
+  <style>
+    #video, #canvas {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <h1>Fingertip Detection and Auto Capture</h1>
+  <video id="video" width="640" height="480" autoplay></video>
+  <canvas id="canvas" width="640" height="480"></canvas>
+  
+  <!-- Load MediaPipe Hands library first -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands"></script>
+  <!-- Load TensorFlow.js library (optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  
+  <!-- Now load the custom JavaScript file -->
+  <script src="/static/app.js"></script>
+</body>
+</html>
